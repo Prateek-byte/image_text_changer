@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
 
 # Use a raw string for the file path
-image_path = r"C:\Users\prate\Desktop\cp_pract\timg.jpg"
+image_path = r"C:\Users\prate\Desktop\cp_pract\timg.jpg"  #change the path
 
 # Open your image file
 img = Image.open(image_path)
@@ -20,7 +20,7 @@ background_color = (255, 255, 255)  # White background
 draw.rectangle([x, y, x + w, y + h], fill=background_color)
 
 # Define the new text and its properties
-new_text = "HIMANSHU MISHRA"
+new_text = "NEW TEXT"
 text_color = (0, 0, 0)  # Black text
 font_size = 36          # Adjust font size if needed
 
@@ -44,7 +44,7 @@ text_y = y + (h - text_height) / 2
 draw.text((text_x, text_y), new_text, fill=text_color, font=font)
 
 # Save the modified image
-output_path = r"C:\Users\prate\Desktop\cp_pract\modified_image.jpg"
+output_path = r"C:\Users\prate\Desktop\cp_pract\modified_image.jpg" #change the path
 img.save(output_path)
 
 print(f"Modified image saved as {output_path}")
